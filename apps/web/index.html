@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jev Snake</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="mast">
+        <div class="brand">
+          <span class="brand-mark">Jev</span>
+          <h1>Snake</h1>
+        </div>
+        <dl class="hud">
+          <div>
+            <dt>分数</dt>
+            <dd id="hud-score">0</dd>
+          </div>
+          <div>
+            <dt>长度</dt>
+            <dd id="hud-length">3</dd>
+          </div>
+          <div>
+            <dt>路障</dt>
+            <dd id="hud-obstacles">0</dd>
+          </div>
+          <div>
+            <dt>拍</dt>
+            <dd id="hud-tick">0</dd>
+          </div>
+          <div>
+            <dt>耗时</dt>
+            <dd id="hud-latency">—</dd>
+          </div>
+          <div>
+            <dt>token</dt>
+            <dd id="hud-tokens">0</dd>
+          </div>
+        </dl>
+      </header>
+
+      <p id="banner" class="banner" hidden></p>
+
+      <main class="layout">
+        <section class="stage" aria-label="棋盘">
+          <div class="crt">
+            <canvas id="board" width="512" height="512"></canvas>
+            <div class="crt-scan" aria-hidden="true"></div>
+            <div id="stage-status" class="stage-status"></div>
+          </div>
+          <div class="controls">
+            <button id="btn-auto" type="button" class="btn btn-primary">暂停</button>
+            <button id="btn-step" type="button" class="btn">单步</button>
+            <button id="btn-reset" type="button" class="btn">新局</button>
+            <p class="hint">方向键或 WASD 覆盖这一拍 · 空格暂停</p>
+          </div>
+        </section>
+
+        <aside class="desk" aria-label="决策台">
+          <div id="inspector" class="inspector"></div>
+        </aside>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

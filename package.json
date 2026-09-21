@@ -1,0 +1,19 @@
+{
+  "name": "jev-snake-game",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.30.3",
+  "scripts": {
+    "dev": "pnpm --filter @jev-snake/web --filter @jev-snake/server --parallel dev",
+    "build": "pnpm --filter @jev-snake/game --filter @jev-snake/web --filter @jev-snake/server -r build"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild"]
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
