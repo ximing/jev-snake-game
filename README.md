@@ -1,8 +1,8 @@
 # Jev Snake
 
-![演示：Jev 驱动贪吃蛇自动运行，右侧展示决策路径](docs/demo.mp4)
+[![演示：Jev 驱动贪吃蛇自动运行，右侧展示决策路径](docs/demo.webp)](https://github.com/ximing/jev-snake-game/blob/main/docs/demo.mp4)
 
-Vite 棋盘 + Hono 服务端，用 TypeSafe 的 Jev 做每一步判断。蛇自动跑，右侧决策台展示事实、Jev 答案和代码组合路径。
+Vite 棋盘 + Hono 服务端，用 TypeSafe 的 Jev 做每一步判断。蛇自动跑，右侧决策台展示事实、Jev 答案和代码组合路径。点上方预览可看[完整录屏](https://github.com/ximing/jev-snake-game/blob/main/docs/demo.mp4)。
 
 详细介绍见博客：[Jev：System One 模型的思考和尝试](https://ximing.ren/post/2026/09-21-jev-system-one/)。
 
